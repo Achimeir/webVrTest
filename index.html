@@ -2,17 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <title>VR game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="VR">
     <script src="script.js"></script>
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
     <a-scene background="color: #ECECEC">
       <a-entity environment="preset:forest"> </a-entity>  
-      <a-entity gltf-model="model.gltf" position="0 1.5 -5" scale="0.01 0.01 0.01"></a-entity>   
+      <a-entity gltf-model="ping.gltf" position= "0 0 0"></a-entity>
+      <a-entity gltf-model="model.gltf" position= "0 0 0" scale="3 3 3"></a-entity>   
     </a-scene>
   </body>
 </html>
